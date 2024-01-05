@@ -1,0 +1,16 @@
+<div>
+  <label for="inputA">Nombre A:</label>
+  <input id="inputA" type="number" [(ngModel)]="a" />
+</div>
+
+<div>
+  <label for="inputB">Nombre B:</label>
+  <input id="inputB" type="number" [(ngModel)]="b" />
+</div>
+
+<button (click)="calculate()">Calculer</button>
+
+<div *ngIf="result !== undefined">
+  <p>Résultat : {{ result }}</p>
+</div>
+
