@@ -26,4 +26,16 @@ describe('AppComponent', () => {
     
   });
 
+  it('should calculate sum correctly', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    app.a = 3;
+    app.b = 4;
+
+    app.multplication();
+
+    expect(app.result).toEqual(12);
+    
+  });
+
 });
