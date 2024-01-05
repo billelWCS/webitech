@@ -9,7 +9,8 @@ import { environment } from 'src/environments/environment'
 export class AppComponent {
   title = 'webitech';
 
-  prod : boolean = environment.production;
+  production : boolean = environment.production;
+  version = environment.version;
 
   a: number = 0;
   b: number = 0;
