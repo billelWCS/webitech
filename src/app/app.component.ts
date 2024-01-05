@@ -19,7 +19,7 @@ export class AppComponent {
     this.result = this.a + this.b;
   }
 
-  multplication(): void {
-    this.result = this.a - this.b;
+  multplication(): void { 
+    this.result = this.a * this.b;
   }
 }
